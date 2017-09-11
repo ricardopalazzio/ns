@@ -5,17 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 const routes: Routes = [
-  {path: '', component: EmployeeComponent,
- // canActivateChild: [AlunosGuard],
-  children : [
-     {path: 'novo', component: FormComponent},
-     {path: ':id', component: FormComponent,
-         //resolve: { aluno : AlunoDetalheResolver }
-     },
-     //{path: ':id/editar', component: AlunoFormComponent,
-     //    canDeactivate: [AlunosDeactivateGuard]
-     //}
- ]}
+  {path: '', component: EmployeeComponent}
 ];
 
 @NgModule({

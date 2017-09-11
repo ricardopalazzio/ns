@@ -1,2 +1,16 @@
-<p> employee</p>
-<router-outlet></router-outlet>
+
+
+    <div class="row">
+        <div class="col-md-12">
+
+        <datatable [dataset]=employees [enableFilter]=true>
+            <column [value]="'id'" [header]="'#'"></column>
+            <column [value]="'nome'" [header]="'Nome'"></column>
+            <column [value]="'pis'" [header]="'Pis'"></column>
+        </datatable>
+
+        </div>
+      </div>
+
+
+

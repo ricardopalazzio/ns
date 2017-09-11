@@ -1,3 +1,6 @@
+import { ColumnComponent } from './../share/components/column/column.component';
+import { TableComponent } from '../share/components/table/table.component';
+import { EmployeeService } from './employee.service';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -18,7 +21,12 @@ import { EmployeeComponent } from './employee.component';
   ],
   declarations: [
     FormComponent,
-    EmployeeComponent
+    EmployeeComponent,
+    TableComponent,
+    ColumnComponent
+  ],
+  providers: [
+    EmployeeService
   ]
 })
 export class EmployeeModule { }
