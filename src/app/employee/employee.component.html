@@ -1,13 +1,15 @@
 
-
+    <div class="page-header">
+      <h2> Funcionários</h2>
+  </div>
     <div class="row">
         <div class="col-md-12">
+          <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a routerLink="list">Lista</a></li>
+            <li role="presentation" ><a routerLink="new">Detalhe</a></li>
+          </ul>
 
-        <datatable [dataset]=employees [enableFilter]=true>
-            <column [value]="'id'" [header]="'#'"></column>
-            <column [value]="'nome'" [header]="'Nome'"></column>
-            <column [value]="'pis'" [header]="'Pis'"></column>
-        </datatable>
+           <router-outlet></router-outlet>
 
         </div>
       </div>

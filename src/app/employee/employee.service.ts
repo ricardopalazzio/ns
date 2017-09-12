@@ -1,5 +1,5 @@
-import { Employee } from './../share/model/employee';
 import { Injectable } from '@angular/core';
+import { Employee } from './../shared/models/employee';
 
 @Injectable()
 export class EmployeeService {

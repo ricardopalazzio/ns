@@ -11,6 +11,7 @@ import { TableComponent } from './../table/table.component';
 export class ColumnComponent {
   @Input() value;
   @Input() header;
+  public query: string;
 
   constructor(table: TableComponent) {
     table.addColumn(this);
